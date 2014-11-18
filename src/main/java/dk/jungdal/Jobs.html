@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <title></title>
+</head>
+<body>
+<wicket:extend>
+<div class="masthead">
+        <ul class="nav nav-pills pull-right">
+            <li>
+                <a href="#" wicket:id="status">Status</a></li>
+
+            <li class="active">
+            	<a href="#"wicket:id="jobs">Printer jobs</a></li>
+            <li>
+                <a href="#" wicket:id="printere">Printere</a></li>
+
+            <li>
+                <a href="#" wicket:id="about">Om ImagePrinter</a></li>
+        </ul>
+        <h3 class="muted"> ImagePrinter</h3>
+    </div>
+    <hr>
+
+<div class="container">
+
+    <wicket:child />
+<h1>Printer jobs</h1>
+  
+	<div wicket:id="feedback"></div>
+ 
+   <div class="panel row">
+ 	<form wicket:id="form1" role="form">
+ 	<div class="form-group">
+ 	<select wicket:id="Folder" class="input-xxlarge" ></select>
+<br>
+    <button type="submit" class="btn btn-default">Print</button>	
+  	</div>
+	</form>
+ </div>
+ 
+ 
+ 
+    <hr>
+
+</div>
+</wicket:extend>
+</body>
+</html>

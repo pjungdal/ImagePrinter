@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:wicket="http://wicket.apache.org">
+<head>
+    <title>Authentication Console - List User Groups</title>
+</head>
+<body>
+<wicket:extend>
+<div class="masthead">
+        <ul class="nav nav-pills pull-right">
+            <li>
+                <a href="#" wicket:id="status">Status</a></li>
+
+            <li>
+            	<a href="#"wicket:id="jobs">Printer jobs</a></li>
+            <li class="active">
+                <a href="#" wicket:id="printere">Printere</a></li>
+
+            <li>
+                <a href="#" wicket:id="about">Om ImagePrinter</a></li>
+        </ul>
+        <h3 class="muted"> ImagePrinter</h3>
+    </div>
+    <hr>
+
+<div class="container">
+
+    <wicket:child />
+<h1>Tilgængelige Printere</h1>
+
+<ul>
+    <li wicket:id="list"></li>
+</ul>
+    <hr>
+</div>
+</wicket:extend>
+</body>
+</html>
